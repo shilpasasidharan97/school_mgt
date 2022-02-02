@@ -1,0 +1,199 @@
+{% extends 'master.html' %}
+{% block content %}
+
+<link rel="stylesheet" href="/static/css/admin/registration.css">
+
+
+<div class="row">
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal" style="margin-top: 30px;margin-left: 100px;text-align: center;align-items: center;">
+    New Teacher
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+
+
+            <form action="">
+
+                <img src="/static/images/profile.png" alt="" style="border-radius: 50%;height: 150px;width: 150px;"><br>
+                <button>Edit Photo<i class='bx bx-plus'></i></button><br><br><br>
+                <h4>Basic Details</h4><hr><br>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details"> Name: </span>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender :</span>
+                        <input type="text" placeholder="Enter your gender">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of birth :</span>
+                        <input type="text" placeholder="Enter your DOB">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address :</span>
+                        <input type="text" placeholder="Enter your current Address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number :</span>
+                        <input type="text" placeholder="Enter your phone number">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email :</span>
+                        <input type="text" placeholder="Enter your email id">
+                    </div>
+                </div><br>
+                <h4>Professional Details</h4><hr><br>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Qualification :</span>
+                        <input type="text" placeholder="Enter your qualification">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Institution Name :</span>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Address :</span>
+                        <input type="text" placeholder="Enter your division">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Year of passing :</span>
+                        <input type="text" placeholder="Enter your academic year">
+                    </div>
+                </div><br>
+    
+                    <h4>Work experience</h4><hr><br>
+                    <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Year of experience :</span>
+                        <input type="text" placeholder="Enter your experience">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Previouus experience :</span>
+                        <input type="text" placeholder="Enter your previous status">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Institution name :</span>
+                        <input type="text" placeholder="Enter the Institution name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address :</span>
+                        <input type="text" placeholder="Enter the address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Proffessional Skills :</span>
+                        <input type="text" placeholder="Enter your skills">
+                    </div>
+                    <!-- <div class="input-box">
+                        <span class="details">Contact Number :</span>
+                        <input type="text" placeholder="Enter the number">
+                    </div> -->
+                </div><br><br>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+    
+                </div><br>
+                
+                
+            </form>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h4>List of teachers</h4>
+<table class="table" style="margin-top:80px;">
+   
+    <thead>
+      <tr>
+        <th scope="col">No.</th>
+        <th scope="col">Name</th>
+        <th scope="col">Id</th>
+        <th scope="col">Address</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Email</th>
+        <th scope="col">class</th>
+        <th scope="col">Division</th>
+        <th scope="col">Total strength</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Ramesh</td>
+        <td>trp10</td>
+        <td>mnbm,m</td>
+        <td>...</td>
+        <td>--</td>
+        <td>--</td>
+        <td>---</td>
+        <td>....</td>
+    </tr>
+      <tr>
+        <th scope="row">1</th>
+        <td >Akhila</td>
+        <td>....</td>
+        <td>--</td>
+        <td></td>
+        <td>F</td>
+        <td>30</td>
+        <td>5</td>
+        <td>,,,,</td>
+      </tr>
+      <tr>
+        <!-- <th scope="row">1</th> -->
+        <!-- <td rowspan="3">8</td> -->
+        <td>C</td>
+        <td>--</td>
+        <td></td>
+        <td>F</td>
+        <td>30</td>
+        <td>2</td>
+        <td>..</td>
+        <td>32</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

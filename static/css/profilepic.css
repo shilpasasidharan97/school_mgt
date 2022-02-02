@@ -1,0 +1,26 @@
+.head{
+    border: 1px black solid;
+    width: 100%;
+    background-color: navy;
+    height: 50px;
+    padding: 8px;
+}
+
+.profile-pic img{
+   
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px #c1c1c1;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+} 
+.profile-badge{
+    border:1px solid white;
+    background-color: white;
+    padding:5px;
+    
+}
+.h5{
+    color: blue;
+}

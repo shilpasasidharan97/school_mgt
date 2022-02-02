@@ -1,0 +1,252 @@
+{% extends 'master.html' %}
+{% block content %}
+
+<link rel="stylesheet" href="/static/css/admin/registration.css">
+
+<div class="row">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-success btn-lg first" data-toggle="modal" data-target="#exampleModal">
+    New Student</button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Student Registration Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+            <form action="">
+
+                <img src="/static/images/profile.png" alt="" style="border-radius: 50%;height: 150px;width: 150px;"><br>
+                <button>Edit Photo<i class='bx bx-plus'></i></button><br><br><br>
+                <h4>Basic Details</h4><hr><br>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details"> Name: </span>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender :</span>
+                        <input type="text" placeholder="Enter your gender">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of birth :</span>
+                        <input type="text" placeholder="Enter your DOB">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address :</span>
+                        <input type="text" placeholder="Enter your current Address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number :</span>
+                        <input type="text" placeholder="Enter your phone number">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email :</span>
+                        <input type="text" placeholder="Enter your email id">
+                    </div>
+                </div><br>
+                <h4>Admission Details</h4><hr><br>
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Date of admission :</span>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Admission Number :</span>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Admitted cladd :</span>
+                        <input type="text" placeholder="Enter your class">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Division :</span>
+                        <input type="text" placeholder="Enter your division">
+                    </div>
+                </div><br>
+    
+                    <h4>Parents Details</h4><hr><br>
+                    <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Father Name :</span>
+                        <input type="text" placeholder="Enter your father name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Communication Adress :</span>
+                        <input type="text" placeholder="Enter your fathers current address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Contact Number :</span>
+                        <input type="text" placeholder="Enter the number">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">mother Name :</span>
+                        <input type="text" placeholder="Enter the name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Communication Address :</span>
+                        <input type="text" placeholder="Enter the address">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Contact Number :</span>
+                        <input type="text" placeholder="Enter the number">
+                    </div>
+                </div><br><br>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+    
+                </div><br>
+                
+                
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-success first btn-lg" data-toggle="modal" data-target="#exampleModal">
+        Attendance</button>
+
+        <button type="button" class="btn btn-success first btn-lg" data-toggle="modal" data-target="#exampleModal">
+            Mark</button>
+  </div>
+
+
+  <div class="col-12 col-xl-6">
+    <div class="card" style="margin-top: 50px;width: 100%;">
+        <div class="card-header">
+            <h5 class="card-title">Student List</h5>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th style="width:40%;">Name</th>
+                    <th style="width:15%">Gender</th>
+                    <th style="width:30%">Phone Number</th>
+                    <th class="d-none d-md-table-cell" style="width:35%">Date of Birth</th>
+                    <th style="width:10%">Standard</th>
+                    <th style="width:10%">Divison</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>joy</td>
+                    <td>Male</td>
+                    <td>7510661741</td>
+                    <td class="d-none d-md-table-cell">June 21, 1997</td>
+                    <td>8</td>
+                    <td>c</td>
+                    <td class="table-action">
+                        <a href="#"><span class="material-icons">edit</span></a>
+                        <a href="#"><span class="material-icons">delete</span></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Nayana</td>
+                    <td>female</td>
+                    <td>914-939-2458</td>
+                    <td class="d-none d-md-table-cell">May 15, 1997</td>
+                    <td>8</td>
+                    <td>c</td>
+                    <td class="table-action">
+                        <a href="#"><span class="material-icons">edit</span></a>
+                        <a href="#"><span class="material-icons">delete</span></i></a>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td>Keerthi
+                    </td>
+                    <td>Female</td>
+                    <td>704-993-5435</td>
+                    <td>8</td>
+                    <td>c</td>
+                    <td class="d-none d-md-table-cell">September 14, 1997</td>
+                    <td class="table-action">
+                        <a href="#"><span class="material-icons">edit</span></a>
+                        <a href="#"><span class="material-icons">delete</span></i></a>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+    <table class="table">
+        <h4>Mark</h4>
+        <thead>
+          <tr>
+            <th scope="col">No</th>
+            <th scope="col">Student Name</th>
+            <th scope="col">Id</th>
+            <th scope="col">first langauge</th>
+            <th scope="col">second language</th>
+            <th scope="col">maths</th>
+            <th scope="col">English</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>joy</td>
+            <td>rp123</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Nayana</td>
+            <td>rp124</td>
+            <td>89</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Keerthi</td>
+            <td>rp125</td>
+            <td>92</td>
+            <td>80</td>
+            <td>80</td>
+            <td>80</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+{% endblock %}
