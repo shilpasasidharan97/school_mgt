@@ -1,0 +1,1 @@
+web: school_mgt.wsgi --log-file -
