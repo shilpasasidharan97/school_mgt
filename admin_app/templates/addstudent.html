@@ -1,0 +1,277 @@
+{% extends 'master.html' %}
+{% block content %}
+
+<link rel="stylesheet" href="/static/css/admin/reg.css">
+<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+<div class="container-fluid">
+    <div class="table-wrapper">
+        <div class="table-title">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Student name <b>(ID)</b></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Profile and Signature -->
+        <div class="row">
+            <div class="col-lg-6 col-sm-6">  
+                <div class="profile-pic-div">
+                    <img src="/static/images/profile.png" class="img-fluid" id="photo">
+                    <input type="file" id="file">
+                    <label for="file" id="uploadBtn">Choose Photo</label>    
+                </div><br><br>
+                <label>Student Name</label>
+            </div> 
+            <div class="col-lg-6 col-sm-6">
+                <div class="profile-pic-div">
+                    <img src="/static/images/profile.png" class="img-fluid" id="photo1">
+                    <input type="file" id="file1">
+                    <label for="file1" id="uploadBtn1">Choose Photo</label>    
+                </div>
+            </div> 
+        </div>
+
+        <!-- Table starting -->
+        <!-- Basic Details -->
+        <button type="button" class="btn btn-primary btn-md btn-block" id="btn1"><i class='bx bxs-grid'></i> Basic Details </button> 
+        <form action="" style="margin-top: 0px;background-color: white;" id="form1"><br>
+            <div class="row">
+                <label>Name</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Name">
+                </div>
+                <label>Place</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Place">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Gender</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Gender">
+                </div>
+                <label>District</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="District">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>DOB</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Date of birth">
+                </div>
+                <label>Nationality</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Nationality">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Age</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Age">
+                </div>
+                <label>Aadhar NO</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Aadhar number">
+                </div>
+            </div><br>
+            <br>
+            <div class="row">
+                <label>Religion</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Religion">
+                </div>
+                <label>Phone no</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Phone number">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Cast</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Cast">
+                </div>
+                <label>Email</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Email Id">
+                </div>
+            </div><br>
+        </form><br>
+
+        <!-- ADMMISION DETAILS -->
+        <button type="button" class="btn btn-primary btn-md btn-block" id="btn2"><i class='bx bxs-school'></i> Educational Details </button><br> 
+        <form action="" style="margin-left: 0px;background-color: white;" id="form2">
+            <div class="row">
+                <label>Class</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="class">
+                </div>
+                <label>Year of Admmision</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Year of admission">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Division</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Divison">
+                </div>
+                <label>Previous School</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Name of previous school">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Date of Admmision</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Date of admission">
+                </div>
+                <label>Leaving date</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="leaving date">
+                </div>
+            </div>
+        </form><br>
+
+        <!-- Gaurdian Details -->
+        <button type="button" class="btn btn-primary btn-md btn-block" id="btn3"><i class='bx bxs-user'></i> Gaurdian Details </button><br>
+        <form action="" style="margin-left: 0px;background-color: white;" id="form3">
+            <div class="row">
+                <label>Father Name</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="class">
+                </div>
+                <label>Mother Name</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Year of admission">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Address</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Divison">
+                </div>
+                <label><Address></Address></label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Name of previous school">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Occupation</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Date of admission">
+                </div>
+                <label>Occupation</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="leaving date">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Phone number</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Date of admission">
+                </div>
+                <label>Phone number</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="leaving date">
+                </div>
+            </div><br>
+            <div class="row">
+                <label>Email</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="Date of admission">
+                </div>
+                <label>Email</label>
+                <div class="col">
+                    <input type="text" class="form-control col-lg-10" placeholder="leaving date">
+                </div>
+            </div>
+        </form><br>
+
+        <!-- certificate -->
+        <button type="button" class="btn btn-primary btn-md btn-block" id="btn4"><i class='bx bxs-certification' ></i> Certificate </button><br>
+        <form action="" style="margin-left: 0px;background-color: white;" id="form4">
+            <div class="row">
+                <label>File1</label>
+                <div class="col">
+                    <input type="file" class="form-control col-lg-10" placeholder="Date of admission">
+                </div>
+                <label>File2</label>
+                <div class="col">
+                    <input type="file" class="form-control col-lg-10" placeholder="leaving date">
+                </div>
+            </div>
+        </form><br>
+        <button type="button" class="btn btn-primary btn-md btn-block" id="btn4"><b>SUBMIT</b> </button>
+
+    
+        
+
+
+<script>
+    //declearing html elements
+
+const imgDiv = document.querySelector('.profile-pic-div');
+const img = document.querySelector('#photo');
+const file = document.querySelector('#file');
+const uploadBtn = document.querySelector('#uploadBtn');
+
+//if user hover on img div 
+
+imgDiv.addEventListener('mouseenter', function(){
+    uploadBtn.style.display = "block";
+});
+
+//if we hover out from img div
+
+imgDiv.addEventListener('mouseleave', function(){
+    uploadBtn.style.display = "none";
+});
+
+//lets work for image showing functionality when we choose an image to upload
+
+//when we choose a foto to upload
+
+file.addEventListener('change', function(){
+    //this refers to file
+    const choosedFile = this.files[0];
+
+    if (choosedFile) {
+
+        const reader = new FileReader(); //FileReader is a predefined function of JS
+
+        reader.addEventListener('load', function(){
+            img.setAttribute('src', reader.result);
+        });
+
+        reader.readAsDataURL(choosedFile);
+    }
+});
+
+
+$(document).ready(function(){
+                $("#btn1").click(function(){
+                $("#form1").toggle()
+                })  
+    })
+
+$(document).ready(function(){
+                $("#btn2").click(function(){
+                $("#form2").toggle()
+                })  
+    })
+$(document).ready(function(){
+                $("#btn3").click(function(){
+                $("#form3").toggle()
+                })  
+    })
+    $(document).ready(function(){
+                $("#btn4").click(function(){
+                $("#form4").toggle()
+                })  
+    })
+</script>
+
+{% endblock %}

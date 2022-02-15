@@ -8,8 +8,12 @@ def dashboard(request):
 def admin_home(request):
     return render(request,'admin_home.html')
 
-def student_details(request):
+def studentdetails(request):
     return render(request,'studentdetails.html')
+def addstudent(request):
+    return render(request,'addstudent.html')
+def staffdetails(request):
+    return render(request,'staffdetails.html')
+def addstaff(request):
+    return render(request,'addstaff.html')
 
-def teacher_details(request):
-    return render(request,'teacherdetails.html')

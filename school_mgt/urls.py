@@ -22,8 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('app1.urls')),
     path('adminapp/',include('admin_app.urls')),
-    path('staffapp/',include('staff_app.urls')),
-    path('studentapp/',include('student_app.urls')),
+    
 ]
 
 urlpatterns += staticfiles_urlpatterns()

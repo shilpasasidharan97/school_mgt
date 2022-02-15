@@ -2,14 +2,14 @@
 {% block content %}
 
 <link rel="stylesheet" href="/static/css/admin/student.css">
-<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
- -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+
 
 <script type="text/javascript">
 $(document).ready(function()
 {
  // Activate tooltip
- $('[data-toggle="tooltip"]').tooltip();  
+ $('[data-toggle="tooltip"]').tooltip();
  
  // Select/Deselect checkboxes
  var checkbox = $('table tbody input[type="checkbox"]');
@@ -44,11 +44,12 @@ $(document).ready(function()
         <div class="table-title">
             <div class="row">
                 <div class="col-sm-6">
-                    <h2>Manage <b> Students</b></h2>
+                    <h2>Manage <b> Teachers</b></h2>
                 </div>
                 <div class="col-sm-6">
                     <!-- todo cancel the modal -->
-                    <a href="{% url 'admin_app:newstudent' %}" class="btn btn-success" ><i class="material-icons">&#xE147;</i> <span>Add New Student</span></a>
+                    <a href="#" class="btn btn-success" ><i class="material-icons">&#xE147;</i> <span>Add Attandance</span></a>
+                    <a href="{% url 'admin_app:newstaff' %}" class="btn btn-success" ><i class="material-icons">&#xE147;</i> <span>Add New Teachers</span></a>
                     <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>      
                 </div>
             </div>
@@ -63,11 +64,11 @@ $(document).ready(function()
                         <label for="selectAll"></label>
                         </span>
                     </th>
-                    <th>Student Name</th>
-                    <th>Student ID</th>
+                    <th>Staff Name</th>
+                    <th>Staff ID</th>
                     <th>Class</th>
-                    <th>Divison</th>
-                    <th>Handling Staff</th>
+                    <th>Subject</th>
+                    <th>Email</th>
                     <th>Contact</th>
                     <th>Action</th>
                 </tr>
@@ -80,11 +81,11 @@ $(document).ready(function()
                         <label for="checkbox1"></label>
                         </span>
                     </td>
-                    <td>Arun</td>
-                    <td>RP101</td>
-                    <td>8</td>
-                    <td>C</td>
                     <td>Ramya</td>
+                    <td>RPS101</td>
+                    <td>8</td>
+                    <td>Maths</td>
+                    <td>123@gmail.com</td>
                     <td>7012538010</td>
                     <td>
                         <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -98,11 +99,11 @@ $(document).ready(function()
                         <label for="checkbox2"></label>
                          </span>
                     </td>
-                    <td>Arjun</td>
-                    <td>RP102</td>
-                    <td>8</td>
-                    <td>A</td>
                     <td>Sumith</td>
+                    <td>RPS102</td>
+                    <td>9</td>
+                    <td>English</td>
+                    <td>1234@gmail.com</td>
                     <td>7012538010</td>
                     <td>
                         <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -116,11 +117,11 @@ $(document).ready(function()
                         <label for="checkbox3"></label>
                         </span>
                     </td>
-                    <td>Keerthi</td>
-                    <td>RP103</td>
+                    <td>Jasmin</td>
+                    <td>RPS103</td>
                     <td>10</td>
-                    <td>A</td>
-                    <td>Mini</td>
+                    <td>Physics</td>
+                    <td>Mini@gmail.com</td>
                     <td>7012538010</td>
                     <td>
                         <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -134,11 +135,11 @@ $(document).ready(function()
                         <label for="checkbox4"></label>
                         </span>
                     </td>
-                    <td>Amruth</td>
-                    <td>RP104</td>
-                    <td>9</td>
-                    <td>C</td>
                     <td>Riyas</td>
+                    <td>RPS104</td>
+                    <td>9</td>
+                    <td>Chemistry</td>
+                    <td>Riyas@gmail.com</td>
                     <td>7012538010</td>
                     <td>
                         <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -152,11 +153,11 @@ $(document).ready(function()
                         <label for="checkbox5"></label>
                         </span>
                     </td>
-                    <td>Manjusha</td>
-                    <td>RP105</td>
-                    <td>10</td>
-                    <td>C</td>
                     <td>Prajosh</td>
+                    <td>RPS105</td>
+                    <td>10</td>
+                    <td>Hindhi</td>
+                    <td>Praj@gmail.com</td>
                     <td>7012538010</td>
                     <td>
                         <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
@@ -180,9 +181,7 @@ $(document).ready(function()
                 </ul>
             </div>
         </div>
-        </div>
     </div>
-    
  
  
  
